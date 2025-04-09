@@ -1,0 +1,13 @@
+ Day 1: Introduction to CUDA
+
+Today, I learned the basics of CUDA and how it works. CUDA enables developers to leverage the massive computational power of NVIDIA GPUs by organizing tasks into threads, blocks, and grids. The host (CPU) manages program flow and data transfer, while the device (GPU) handles parallel computations. Threads execute simultaneously, enabling operations like vector addition or matrix multiplication to be performed much faster than on CPUs.
+GPUs can have thousands of cores compared to CPUs with typically 4-64 cores, making them ideal for parallel workloads where the same operation needs to be performed on large datasets simultaneously. The thread hierarchy (threads → blocks → grids) allows developers to organize computations efficiently.
+Memory management is crucial in CUDA programming, as data must be explicitly copied between host and device memory. There are different types of memory available on the GPU with varying access speeds and scopes: global memory, shared memory, local memory, and constant memory.
+CUDA really shines in applications like deep learning, scientific simulations, and cryptocurrency mining where massive parallelism delivers substantial performance benefits
+ 
+Key Concepts
+
+- Host vs Device: CPU is the host, GPU is the device.
+- Threads, Blocks, Grids: Organization of parallel tasks.
+- Memory Management: Explicit data transfer between host and device.
+- Kernel Execution: Functions executed on the GPU.
